@@ -33,3 +33,19 @@ export type BlockMap = Record<string, PartialBlock>
 export type BlockChildrenMap = Record<string, Array<string>>
 
 export type ParentMap = Record<string, string>
+
+export type PartialDatabase = Awaited<
+  ReturnType<InstanceType<typeof Client>['databases']['retrieve']>
+>
+
+export type DataSource = Awaited<
+  ReturnType<InstanceType<typeof Client>['dataSources']['retrieve']>
+>
+
+export type DataSourceQuery = Awaited<
+  ReturnType<InstanceType<typeof Client>['dataSources']['query']>
+>
+
+export type CollectionMap = Record<string, PartialDatabase>
+export type DataSourceMap = Record<string, DataSource>
+export type DataSourceQueryMap = Record<string, DataSourceQuery>

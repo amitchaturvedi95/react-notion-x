@@ -10,13 +10,17 @@ export function convertBlock({
   children = [],
   pageMap,
   blockMap,
-  parentMap
+  parentMap,
+  databaseMap,
+  dataSourceMap
 }: {
   block: types.PartialBlock
   children?: string[]
   pageMap?: types.PageMap
   blockMap?: types.BlockMap
   parentMap?: types.ParentMap
+  databaseMap?: types.CollectionMap
+  dataSourceMap?: types.DataSourceMap
 }): notion.Block {
   const compatBlock: any = {
     id: partialBlock.id,
@@ -333,7 +337,32 @@ export function convertBlock({
       break
 
     case 'child_database':
-      // TODO
+      // Convert to collection_view block for renderer compatibility
+      compatBlock.type = 'collection_view'
+
+      // Use database maps to find the data source info
+      if (databaseMap && dataSourceMap && databaseMap[block.id]) {
+        const database = databaseMap[block.id]
+        const dataSourceId = (database as any).data_sources?.[0]?.id
+
+        if (dataSourceId && dataSourceMap[dataSourceId]) {
+          const viewId = `${dataSourceId}-gallery`
+
+          compatBlock.properties = {
+            title: convertRichText((database as any).title || [])
+          }
+          compatBlock.format = {
+            collection_pointer: {
+              id: dataSourceId,
+              table: 'collection'
+            }
+          }
+
+          // Add required properties for renderer
+          ;(compatBlock as any).view_ids = [viewId]
+          ;(compatBlock as any).collection_id = dataSourceId
+        }
+      }
       break
 
     case 'table':

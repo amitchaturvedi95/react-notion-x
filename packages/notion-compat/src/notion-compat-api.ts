@@ -24,15 +24,25 @@ export class NotionCompatAPI {
       this.client.blocks.retrieve({ block_id: pageId }),
       this.getAllBlockChildren(pageId)
     ])
-    const { blockMap, blockChildrenMap, pageMap, parentMap } =
-      await this.resolvePage(pageId)
+    const {
+      blockMap,
+      blockChildrenMap,
+      pageMap,
+      parentMap,
+      databaseMap,
+      dataSourceMap,
+      dataSourceQueryMap
+    } = await this.resolvePage(pageId)
 
     const recordMap = convertPage({
       pageId,
       blockMap,
       blockChildrenMap,
       pageMap,
-      parentMap
+      parentMap,
+      databaseMap,
+      dataSourceMap,
+      dataSourceQueryMap
     })
 
     ;(recordMap as any).raw = {
@@ -56,6 +66,9 @@ export class NotionCompatAPI {
     const pageMap: types.PageMap = {}
     const parentMap: types.ParentMap = {}
     const blockChildrenMap: types.BlockChildrenMap = {}
+    const databaseMap: types.CollectionMap = {}
+    const dataSourceMap: types.DataSourceMap = {}
+    const dataSourceQueryMap: types.DataSourceQueryMap = {}
     const pendingBlockIds = new Set<string>()
     const queue = new PQueue({ concurrency })
 
@@ -192,11 +205,50 @@ export class NotionCompatAPI {
     await processBlock(rootBlockId)
     await queue.onIdle()
 
+    // Process databases found in blocks
+    for (const [blockId, block] of Object.entries(blockMap)) {
+      const blockData = block as types.Block
+      if (blockData.type === 'child_database') {
+        try {
+          // Fetch database information
+          const database = await this.client.databases.retrieve({
+            database_id: blockId
+          })
+          databaseMap[blockId] = database
+
+          // Get data sources from database
+          if (
+            (database as any).data_sources &&
+            (database as any).data_sources.length > 0
+          ) {
+            const dataSourceId = (database as any).data_sources[0].id
+
+            // Fetch data source details
+            const dataSource = await this.client.dataSources.retrieve({
+              data_source_id: dataSourceId
+            })
+            dataSourceMap[dataSourceId] = dataSource
+
+            // Query data source for pages
+            const queryResponse = await this.client.dataSources.query({
+              data_source_id: dataSourceId
+            })
+            dataSourceQueryMap[dataSourceId] = queryResponse
+          }
+        } catch (err: any) {
+          console.warn('failed resolving database', blockId, err.message)
+        }
+      }
+    }
+
     return {
       blockMap,
       blockChildrenMap,
       pageMap,
-      parentMap
+      parentMap,
+      databaseMap,
+      dataSourceMap,
+      dataSourceQueryMap
     }
   }
 

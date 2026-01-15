@@ -2,19 +2,30 @@ import type * as notion from 'notion-types'
 
 import type * as types from './types'
 import { convertBlock } from './convert-block'
+import {
+  convertDatabaseToCollection,
+  convertDataSourceQueryToQueryResult,
+  createDefaultCollectionView
+} from './convert-database'
 
 export function convertPage({
   pageId,
   blockMap,
   blockChildrenMap,
   pageMap,
-  parentMap
+  parentMap,
+  databaseMap,
+  dataSourceMap,
+  dataSourceQueryMap
 }: {
   pageId: string
   blockMap: types.BlockMap
   blockChildrenMap: types.BlockChildrenMap
   pageMap: types.PageMap
   parentMap: types.ParentMap
+  databaseMap?: types.CollectionMap
+  dataSourceMap?: types.DataSourceMap
+  dataSourceQueryMap?: types.DataSourceQueryMap
 }): notion.ExtendedRecordMap {
   const compatBlocks = Object.values(blockMap).map((block) =>
     convertBlock({
@@ -22,7 +33,9 @@ export function convertPage({
       children: blockChildrenMap[block.id],
       pageMap,
       blockMap,
-      parentMap
+      parentMap,
+      databaseMap,
+      dataSourceMap
     })
   )
 
@@ -31,7 +44,9 @@ export function convertPage({
     blockMap,
     blockChildrenMap,
     pageMap,
-    parentMap
+    parentMap,
+    databaseMap,
+    dataSourceMap
   })
 
   const compatPageBlocks = Object.keys(pageMap)
@@ -42,7 +57,9 @@ export function convertPage({
         blockMap,
         blockChildrenMap,
         pageMap,
-        parentMap
+        parentMap,
+        databaseMap,
+        dataSourceMap
       })
     )
 
@@ -62,11 +79,55 @@ export function convertPage({
   const spaceId = extractSpaceId(compatBlockMap)
   const teamInfo = spaceId ? createTeamInfo(spaceId) : {}
 
+  // Process databases and collections
+  const collection: any = {}
+  const collection_view: any = {}
+  const collection_query: any = {}
+
+  if (databaseMap && dataSourceMap && dataSourceQueryMap) {
+    for (const [, database] of Object.entries(databaseMap)) {
+      const dataSourceId = (database as any).data_sources?.[0]?.id
+      if (dataSourceId && dataSourceMap[dataSourceId]) {
+        const dataSource = dataSourceMap[dataSourceId]
+        const queryResponse = dataSourceQueryMap[dataSourceId]
+
+        // Convert database to collection
+        const collectionData = convertDatabaseToCollection(database, dataSource)
+        collection[dataSourceId] = {
+          role: 'editor',
+          value: collectionData
+        }
+
+        // Create default gallery view
+        const viewId = `${dataSourceId}-gallery`
+        const collectionView = createDefaultCollectionView(
+          dataSourceId,
+          dataSource
+        )
+        collection_view[viewId] = {
+          role: 'editor',
+          value: collectionView
+        }
+
+        // Convert query results
+        if (queryResponse) {
+          const queryResult = convertDataSourceQueryToQueryResult(
+            queryResponse,
+            viewId
+          )
+          collection_query[dataSourceId] = {
+            [viewId]: queryResult
+          }
+        }
+      }
+    }
+  }
+
   return {
     block: compatBlockMap as any,
-    collection: {},
-    collection_view: {},
-    collection_query: {},
+    collection,
+    collection_view,
+    collection_query,
     signed_urls: {},
     notion_user: {},
     ...(spaceId && { space: teamInfo })
@@ -110,13 +171,17 @@ export function convertPageBlock({
   blockMap,
   blockChildrenMap,
   pageMap,
-  parentMap
+  parentMap,
+  databaseMap,
+  dataSourceMap
 }: {
   pageId: string
   blockMap: types.BlockMap
   blockChildrenMap: types.BlockChildrenMap
   pageMap: types.PageMap
   parentMap: types.ParentMap
+  databaseMap?: types.CollectionMap
+  dataSourceMap?: types.DataSourceMap
 }): notion.Block | null {
   const partialPage = pageMap[pageId]
   const page = partialPage as types.Page
@@ -127,7 +192,9 @@ export function convertPageBlock({
       children: blockChildrenMap[page.id],
       pageMap,
       blockMap,
-      parentMap
+      parentMap,
+      databaseMap,
+      dataSourceMap
     })
 
     return compatPageBlock
