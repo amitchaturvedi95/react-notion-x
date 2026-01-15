@@ -99,7 +99,7 @@ export function convertPage({
         }
 
         // Create default gallery view
-        const viewId = `${dataSourceId}-gallery`
+        const viewId = `${dataSourceId}`
         const collectionView = createDefaultCollectionView(
           dataSourceId,
           dataSource

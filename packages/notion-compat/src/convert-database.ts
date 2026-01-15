@@ -115,7 +115,7 @@ export function createDefaultCollectionView(
   collectionId: string,
   _dataSource: types.DataSource
 ): notion.CollectionView {
-  const viewId = `${collectionId}-gallery`
+  const viewId = `${collectionId}`
 
   const galleryView: notion.GalleryCollectionView = {
     id: viewId,

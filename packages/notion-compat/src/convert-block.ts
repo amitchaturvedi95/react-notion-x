@@ -249,10 +249,99 @@ export function convertBlock({
       if (pageMap) {
         const page = pageMap[block.id] as types.Page
         if (page) {
-          if (page.properties.title) {
-            const titleRichText = (page.properties.title as any).rich_text
-            if (titleRichText && Array.isArray(titleRichText)) {
-              compatBlock.properties.title = convertRichText(titleRichText)
+          // Convert ALL page properties, not just title
+          for (const [propertyKey, propertyValue] of Object.entries(
+            page.properties
+          )) {
+            if (
+              propertyValue &&
+              typeof propertyValue === 'object' &&
+              'type' in propertyValue
+            ) {
+              const property = propertyValue as any
+
+              switch (property.type) {
+                case 'title':
+                  if (property.title) {
+                    compatBlock.properties.title = convertRichText(
+                      property.title
+                    )
+                  }
+                  break
+
+                case 'rich_text':
+                  if (property.rich_text) {
+                    compatBlock.properties[propertyKey] = convertRichText(
+                      property.rich_text
+                    )
+                  }
+                  break
+
+                case 'select':
+                  if (property.select) {
+                    compatBlock.properties[propertyKey] = [
+                      [property.select.name]
+                    ]
+                  }
+                  break
+
+                case 'multi_select':
+                  if (property.multi_select) {
+                    compatBlock.properties[propertyKey] =
+                      property.multi_select.map((option: any) => [option.name])
+                  }
+                  break
+
+                case 'number':
+                  if (property.number !== null) {
+                    compatBlock.properties[propertyKey] = [
+                      [property.number.toString()]
+                    ]
+                  }
+                  break
+
+                case 'date':
+                  if (property.date) {
+                    compatBlock.properties[propertyKey] = [
+                      [property.date.start || '']
+                    ]
+                  }
+                  break
+
+                case 'checkbox':
+                  compatBlock.properties[propertyKey] = [
+                    [property.checked ? 'Yes' : 'No']
+                  ]
+                  break
+
+                case 'url':
+                  if (property.url) {
+                    compatBlock.properties[propertyKey] = [[property.url]]
+                  }
+                  break
+
+                case 'email':
+                  if (property.email) {
+                    compatBlock.properties[propertyKey] = [[property.email]]
+                  }
+                  break
+
+                case 'phone_number':
+                  if (property.phone_number) {
+                    compatBlock.properties[propertyKey] = [
+                      [property.phone_number]
+                    ]
+                  }
+                  break
+
+                default:
+                  // Handle unknown types as text
+                  if (property.rich_text) {
+                    compatBlock.properties[propertyKey] = convertRichText(
+                      property.rich_text
+                    )
+                  }
+              }
             }
           }
 
@@ -346,7 +435,7 @@ export function convertBlock({
         const dataSourceId = (database as any).data_sources?.[0]?.id
 
         if (dataSourceId && dataSourceMap[dataSourceId]) {
-          const viewId = `${dataSourceId}-gallery`
+          const viewId = `${dataSourceId}`
 
           compatBlock.properties = {
             title: convertRichText((database as any).title || [])
@@ -354,9 +443,27 @@ export function convertBlock({
           compatBlock.format = {
             collection_pointer: {
               id: dataSourceId,
-              table: 'collection'
+              table: 'collection',
+              spaceId: 'workspace'
+            },
+            collection_pointers: [
+              {
+                id: dataSourceId,
+                table: 'collection',
+                spaceId: 'workspace'
+              }
+            ],
+            copied_from_pointer: {
+              id: dataSourceId,
+              table: 'block',
+              spaceId: 'workspace'
             }
           }
+
+          // Add additional required properties
+          compatBlock.copied_from = dataSourceId
+          compatBlock.space_id = 'workspace'
+          compatBlock.crdt_format_version = 1
 
           // Add required properties for renderer
           ;(compatBlock as any).view_ids = [viewId]

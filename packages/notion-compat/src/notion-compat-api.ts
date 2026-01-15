@@ -234,6 +234,37 @@ export class NotionCompatAPI {
               data_source_id: dataSourceId
             })
             dataSourceQueryMap[dataSourceId] = queryResponse
+
+            // Fetch individual course pages from query results
+            for (const result of queryResponse.results) {
+              if (result.object === 'page') {
+                try {
+                  const page = await this.client.pages.retrieve({
+                    page_id: result.id
+                  })
+                  pageMap[result.id] = page
+
+                  const pageBlock = await this.client.blocks.retrieve({
+                    block_id: result.id
+                  })
+                  blockMap[result.id] = pageBlock
+
+                  // Fetch page children if any
+                  if ((pageBlock as any).has_children) {
+                    const children = await this.getAllBlockChildren(result.id)
+                    blockChildrenMap[result.id] = children.map(
+                      (child) => child.id
+                    )
+                  }
+                } catch (err: any) {
+                  console.warn(
+                    'failed resolving course page',
+                    result.id,
+                    err.message
+                  )
+                }
+              }
+            }
           }
         } catch (err: any) {
           console.warn('failed resolving database', blockId, err.message)
