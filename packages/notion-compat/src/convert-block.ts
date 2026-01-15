@@ -226,6 +226,8 @@ export function convertBlock({
       if (pageMap) {
         const page = pageMap[block.id] as types.Page
         if (page) {
+          const fileIds: string[] = []
+
           // Convert all page properties (including database properties)
           if (page.properties) {
             const convertedProperties = convertPageProperties(page.properties)
@@ -242,12 +244,29 @@ export function convertBlock({
                 compatBlock.format.page_cover = page.cover.external.url
                 break
 
-              case 'file':
-                compatBlock.format.page_cover = page.cover.file.url
+              case 'file': {
+                const coverUrl = page.cover.file.url
+                // Extract file ID and filename from URL for attachment: format
+                const urlMatch = coverUrl.match(
+                  /([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})\/([^?]+)/
+                )
+                if (urlMatch && urlMatch[1] && urlMatch[2]) {
+                  const fileId = urlMatch[1]
+                  const filename = urlMatch[2]
+                  // Use attachment: format like v3
+                  compatBlock.format.page_cover = `attachment:${fileId}:${filename}`
+                  fileIds.push(fileId)
+                } else {
+                  // Fallback to URL if we can't parse it
+                  compatBlock.format.page_cover = coverUrl
+                }
                 break
+              }
             }
             // Default cover position to center (0.5)
             compatBlock.format.page_cover_position = 0.5
+            // Set page_full_width for pages with covers
+            compatBlock.format.page_full_width = true
           }
 
           // Handle page icon
@@ -261,10 +280,24 @@ export function convertBlock({
                 compatBlock.format.page_icon = page.icon.external.url
                 break
 
-              case 'file':
-                compatBlock.format.page_icon = page.icon.file.url
+              case 'file': {
+                const iconUrl = page.icon.file.url
+                compatBlock.format.page_icon = iconUrl
+                // Extract file ID if present
+                const fileIdMatch = iconUrl.match(
+                  /([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})/
+                )
+                if (fileIdMatch && fileIdMatch[1]) {
+                  fileIds.push(fileIdMatch[1])
+                }
                 break
+              }
             }
+          }
+
+          // Add file_ids array if we have any files
+          if (fileIds.length > 0) {
+            ;(compatBlock as any).file_ids = fileIds
           }
 
           // Set parent table based on parent type

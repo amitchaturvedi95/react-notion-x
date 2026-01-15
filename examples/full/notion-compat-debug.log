@@ -1,0 +1,6257 @@
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:26:25.289Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "58e666f4-f815-4b61-846d-7500aedde0c5"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "f5695944-e77c-49e3-8ceb-93d39604e924"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:26:27.674Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Failed to query database 2e1eb580-eec6-8158-ba9f-c75673771438: Invalid request URL.
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Failed to query database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: Invalid request URL.
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:26:28.539Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "099db29c-9b83-4761-8a80-e297bb759719"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "f332a78a-b23d-4f82-8693-5d68c85e9a7a"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:26:30.721Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Failed to query database 2e1eb580-eec6-8158-ba9f-c75673771438: Invalid request URL.
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Failed to query database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: Invalid request URL.
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:27:17.623Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "49da4beb-706f-4eb7-88d7-73604d5af062"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "02a0a29e-eb95-4a6c-adff-702aa3164768"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:27:28.643Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:29:27.765Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "e3456bb7-8787-463f-91c8-ceda7c3fa6f0"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "d4573ecc-15eb-488d-b1c7-4ff220c0a72a"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:29:31.016Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:29:30.900Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "7bf5d315-c88e-4c02-a632-39e33a90f079"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "0122dc7a-d220-4330-8205-50fed4b6cb46"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:29:33.688Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:31:05.088Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "b654ad8a-c742-4aac-afd2-e91bf062b6a1"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "cc5580ee-89cd-40b0-8c37-35ad83ac45ed"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:31:08.658Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:31:18.939Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "dca0fe70-f015-49bd-a4c7-cbf61abeb8bb"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "6852cab8-254c-42bb-9f12-e10c4b46df48"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:31:24.805Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:43:14.268Z
+Page ID: 2e1eb580-eec6-80c6-bbdb-e980746cc5ca
+Total blocks in blockMap: 26
+Found 2 child_database blocks: ["2e1eb580-eec6-8147-8850-cbc27bcd2f88","2e1eb580-eec6-81d9-8599-fca0c03670c9"]
+
+Processing database: 2e1eb580-eec6-8147-8850-cbc27bcd2f88
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81ca-b791-000b5f759b28",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:44:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:44:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Dairy Free Recipies database (1)",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Dairy Free Recipies database (1)",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Text": {
+      "id": "dBpQ",
+      "name": "Text",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Type": {
+      "id": "ySUq",
+      "name": "Type",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "BTJh",
+            "name": "Event Food",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "cY~E",
+            "name": "Breakfast",
+            "color": "gray",
+            "description": null
+          },
+          {
+            "id": "DriF",
+            "name": "Other",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "=UNe",
+            "name": "Dinner",
+            "color": "gray",
+            "description": null
+          },
+          {
+            "id": "iDKQ",
+            "name": "Lunch",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "zlUZ",
+            "name": "My Recipes",
+            "color": "gray",
+            "description": null
+          },
+          {
+            "id": "jByL",
+            "name": "Dessert",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "8bacec3c-accb-49be-9214-a41dfa2d9ddd",
+            "name": "Teatime Foods",
+            "color": "gray",
+            "description": null
+          },
+          {
+            "id": "01f6c220-5c2f-4239-a72b-d61416aa3a78",
+            "name": "Meal Prep Snacks",
+            "color": "default",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8147-8850-cbc27bcd2f88"
+  },
+  "database_parent": {
+    "type": "page_id",
+    "page_id": "2e1eb580-eec6-80c6-bbdb-e980746cc5ca"
+  },
+  "url": "https://www.notion.so/2e1eb580eec681478850cbc27bcd2f88",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "af0cfdcd-36f2-4b3c-ad40-e469fde60daa"
+}
+
+Processing database: 2e1eb580-eec6-81d9-8599-fca0c03670c9
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81fd-a4bd-000b0d31be45",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:44:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:44:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "My Weekly Meals",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "My Weekly Meals",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Meal Description": {
+      "id": "C%3EXe",
+      "name": "Meal Description",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Tags": {
+      "id": "LDjk",
+      "name": "Tags",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": []
+      }
+    },
+    "Date": {
+      "id": "sMo%3D",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-81d9-8599-fca0c03670c9"
+  },
+  "database_parent": {
+    "type": "page_id",
+    "page_id": "2e1eb580-eec6-80c6-bbdb-e980746cc5ca"
+  },
+  "url": "https://www.notion.so/2e1eb580eec681d98599fca0c03670c9",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "601ac02e-2b2e-4945-bd11-53ab576d32f5"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8147-8850-cbc27bcd2f88","2e1eb580-eec6-81d9-8599-fca0c03670c9"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:43:18.182Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8147-8850-cbc27bcd2f88
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8147-8850-cbc27bcd2f88 (collection 2e1eb580-eec6-81ca-b791-000b5f759b28)...
+Query result for 2e1eb580-eec6-8147-8850-cbc27bcd2f88: 18 pages
+Block IDs: 2e1eb580-eec6-8106-88b9-f5910760f524, 2e1eb580-eec6-8111-b344-cc65f39dc4a7, 2e1eb580-eec6-8113-b45e-fc09d6dad3cc, 2e1eb580-eec6-812f-b9a6-c94b5177789c, 2e1eb580-eec6-8131-aeda-d7bfbb73de5b, 2e1eb580-eec6-8140-bf0c-d3ed4de29f1d, 2e1eb580-eec6-814a-97c4-f26f5039277f, 2e1eb580-eec6-815a-9346-e99378d3b279, 2e1eb580-eec6-8161-80ce-d21b5cd7b072, 2e1eb580-eec6-8166-8a8c-c7aa04d6380e, 2e1eb580-eec6-8174-8f16-cf7fb9119eb2, 2e1eb580-eec6-8179-a57d-e68d76cbd80a, 2e1eb580-eec6-818e-9ed4-d6675c6b67cf, 2e1eb580-eec6-819d-9373-fa8896dfc637, 2e1eb580-eec6-819d-bd81-dd9881ce7ae5, 2e1eb580-eec6-81d5-9ca3-d1bfc4ee6ed2, 2e1eb580-eec6-81f6-b8af-cd6a46710f0d, 2e1eb580-eec6-81f8-9b8f-fa59b702743e
+Processing database: 2e1eb580-eec6-81d9-8599-fca0c03670c9
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-81d9-8599-fca0c03670c9 (collection 2e1eb580-eec6-81fd-a4bd-000b0d31be45)...
+Query result for 2e1eb580-eec6-81d9-8599-fca0c03670c9: 100 pages
+Block IDs: 2e1eb580-eec6-8100-8776-c3159bb775b0, 2e1eb580-eec6-8101-bd64-d82a481cbad3, 2e1eb580-eec6-8103-a074-f1f06344a840, 2e1eb580-eec6-8104-9a6b-d4a10b0e7ad3, 2e1eb580-eec6-8105-8702-da0c0e49f7cf, 2e1eb580-eec6-8105-8e7b-c3c259ebaf1c, 2e1eb580-eec6-8106-843b-de9728325cc2, 2e1eb580-eec6-8107-8bee-d1a25841cdc3, 2e1eb580-eec6-8108-bf42-c3daf502048c, 2e1eb580-eec6-8109-ac93-c66fb0bcba09, 2e1eb580-eec6-810a-9971-cb70c6dfb2ea, 2e1eb580-eec6-810a-a8d2-f0be8e426450, 2e1eb580-eec6-810d-aae0-f9f6a252b98f, 2e1eb580-eec6-810d-b6e2-e5160102f354, 2e1eb580-eec6-810e-8ab0-e2d1441bdae8, 2e1eb580-eec6-810f-8501-d1f987c1f4b1, 2e1eb580-eec6-8111-8d2d-ffea555ecb5d, 2e1eb580-eec6-8113-8f80-efa6b3df7a4e, 2e1eb580-eec6-8113-a41e-cd595c787632, 2e1eb580-eec6-8114-82eb-d32ffbb7faae, 2e1eb580-eec6-8114-a05e-fba052a31189, 2e1eb580-eec6-8117-9284-edce49b94830, 2e1eb580-eec6-8117-b3a1-dd542848e4ae, 2e1eb580-eec6-8118-b2f2-e3dd62889915, 2e1eb580-eec6-8118-bee7-d192552c29e5, 2e1eb580-eec6-811b-a319-cf2fc1e01776, 2e1eb580-eec6-811b-af3b-d2c0792ddee5, 2e1eb580-eec6-811c-b991-dfdd80f2e757, 2e1eb580-eec6-811d-9477-c18a3a098ef8, 2e1eb580-eec6-811d-a5aa-c51830148cc1, 2e1eb580-eec6-811e-a0d4-f094d20b3c83, 2e1eb580-eec6-811f-8378-fa4e1c8bed51, 2e1eb580-eec6-8120-a133-d7ed40792c1a, 2e1eb580-eec6-8120-ab86-d63bb22a5086, 2e1eb580-eec6-8121-a1f1-c2245ed76401, 2e1eb580-eec6-8121-a679-f79d9a02a33f, 2e1eb580-eec6-8122-8526-ef20a3d70935, 2e1eb580-eec6-8122-87a9-dc6610781da5, 2e1eb580-eec6-8122-8a5a-ce0661d02f82, 2e1eb580-eec6-8122-9473-e97cc47549d0, 2e1eb580-eec6-8123-a9fc-c979ab7b3379, 2e1eb580-eec6-8123-b138-c31c7fa12b13, 2e1eb580-eec6-8125-a1cb-ddfa04bb9677, 2e1eb580-eec6-8126-a992-e5be4f19a019, 2e1eb580-eec6-8127-ab61-ef9b319e17e2, 2e1eb580-eec6-8127-af39-df9b0c5e115a, 2e1eb580-eec6-8127-b29b-f18f5a863c4d, 2e1eb580-eec6-8128-8a99-f3582f1c8458, 2e1eb580-eec6-8128-a5a3-ce9d0dfe0783, 2e1eb580-eec6-8128-a6a2-c939619050d9, 2e1eb580-eec6-8128-a9d3-f5ddd86253a1, 2e1eb580-eec6-8128-abf6-f7ce20352f7b, 2e1eb580-eec6-8128-be85-face808ea140, 2e1eb580-eec6-8129-9d1e-cceb2f618660, 2e1eb580-eec6-812a-847c-ea568d242511, 2e1eb580-eec6-812b-83b0-d6ba9c09aed1, 2e1eb580-eec6-812b-ad4e-ef84d3db5d24, 2e1eb580-eec6-812d-88f5-d86d18ccdfeb, 2e1eb580-eec6-812d-9d93-d751d7294538, 2e1eb580-eec6-812d-b7c1-d6de678fde87, 2e1eb580-eec6-812e-81fd-e2703b91601e, 2e1eb580-eec6-812e-ae4a-c73a0bad9572, 2e1eb580-eec6-812e-bdb1-dca75001605c, 2e1eb580-eec6-812f-98e0-f3cbb3b7cdc1, 2e1eb580-eec6-812f-b253-d5d7d3a53b60, 2e1eb580-eec6-8130-84c8-e71ffca1299f, 2e1eb580-eec6-8133-83ce-e6f284fff29f, 2e1eb580-eec6-8133-a861-c43e4a896e0a, 2e1eb580-eec6-8134-9304-f22a45b06347, 2e1eb580-eec6-8134-9690-f7d31fe4ae43, 2e1eb580-eec6-8134-ad08-ce4bcfad4dd6, 2e1eb580-eec6-8134-b8b3-c6cc692eca4c, 2e1eb580-eec6-8136-8243-c707f349acf2, 2e1eb580-eec6-8136-9135-d2771fe28ebd, 2e1eb580-eec6-8136-b06d-df7462dc43ff, 2e1eb580-eec6-8138-825f-c9aa05a00eeb, 2e1eb580-eec6-8139-a1ba-d39094853185, 2e1eb580-eec6-8139-b1e4-de5e0aba1dd8, 2e1eb580-eec6-813b-861a-e9c8968fb78a, 2e1eb580-eec6-813b-b118-f271b918ea74, 2e1eb580-eec6-813c-ae45-c694f8797a60, 2e1eb580-eec6-8140-83c5-ec796dd83145, 2e1eb580-eec6-8140-b918-ed6d1b21d541, 2e1eb580-eec6-8142-87c0-fe590ccd30b0, 2e1eb580-eec6-8144-bdd3-e823687d6008, 2e1eb580-eec6-8145-8c2b-c3c52772c547, 2e1eb580-eec6-8145-9e09-d9f9be137b55, 2e1eb580-eec6-8145-b0b4-dced55882f83, 2e1eb580-eec6-8146-acde-f6ad5d964912, 2e1eb580-eec6-8147-9e46-f79e52e6d008, 2e1eb580-eec6-8147-ba6c-c22828869b43, 2e1eb580-eec6-8149-8a3d-ca14dd77d81e, 2e1eb580-eec6-8149-9892-ee16d0a3dcf8, 2e1eb580-eec6-8149-a184-edb8359b84c8, 2e1eb580-eec6-8149-b89c-d118d25aa366, 2e1eb580-eec6-814a-8a5b-d66957cb1908, 2e1eb580-eec6-814b-9c00-df3e65a3664e, 2e1eb580-eec6-814b-b2cf-ce5190ee119e, 2e1eb580-eec6-814c-bca7-d05c34a4cbd4, 2e1eb580-eec6-814d-9ac0-f96522258129
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:43:56.971Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "61463811-b63d-4282-8305-a18fc464d443"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "0aa768e8-59dd-4a12-8123-49f37224733b"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:44:01.434Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T10:44:26.208Z
+Page ID: 2e1eb580-eec6-8112-857e-c0d2d00bb082
+Total blocks in blockMap: 15
+Found 1 child_database blocks: ["2e1eb580-eec6-810c-bb43-e2f7b1f1e915"]
+
+Processing database: 2e1eb580-eec6-810c-bb43-e2f7b1f1e915
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-819d-85f3-000b2882a799",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Upcoming",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Upcoming",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Status": {
+      "id": "NN%40Y",
+      "name": "Status",
+      "description": null,
+      "type": "status",
+      "status": {
+        "options": [
+          {
+            "id": "4e9a5b9d-8408-4e8c-bba8-7f9c3fd28681",
+            "name": "Not started",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "73d4fec1-65a5-4e2c-a14c-38d7bbbd86f6",
+            "name": "In progress",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "45f82a71-e815-48ab-8404-72975d2a3129",
+            "name": "Done",
+            "color": "green",
+            "description": null
+          }
+        ],
+        "groups": [
+          {
+            "id": "ea48f15d-fb75-4ce2-8e7d-99e7f16a705a",
+            "name": "To-do",
+            "color": "gray",
+            "option_ids": [
+              "4e9a5b9d-8408-4e8c-bba8-7f9c3fd28681"
+            ]
+          },
+          {
+            "id": "e281dd59-3893-4c2d-816c-1fdecbbebe58",
+            "name": "In progress",
+            "color": "blue",
+            "option_ids": [
+              "73d4fec1-65a5-4e2c-a14c-38d7bbbd86f6"
+            ]
+          },
+          {
+            "id": "08c8169b-9e34-4ccd-b70a-56869ed673d2",
+            "name": "Complete",
+            "color": "green",
+            "option_ids": [
+              "45f82a71-e815-48ab-8404-72975d2a3129"
+            ]
+          }
+        ]
+      }
+    },
+    "Priority": {
+      "id": "%60%60%40x",
+      "name": "Priority",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "f4ed2179-55a9-4ecc-aefe-4bd65a198d8f",
+            "name": "High",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ee9440b7-1580-47c3-a09d-6200855ddbf0",
+            "name": "Medium",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "b4fe6f3f-c1c1-48a7-9a13-b624a78ebc83",
+            "name": "Low",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "2d1fa414-880b-42d1-aa32-e07b332f23a5",
+            "name": "Complete",
+            "color": "blue",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Due Date": {
+      "id": "auk%3C",
+      "name": "Due Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Class": {
+      "id": "cbLX",
+      "name": "Class",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "d372f96a-6d5a-4bd7-896d-be1743086b3f",
+            "name": "A&P (LAB)",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "a1b1f71b-303a-481b-aebc-d85e960be516",
+            "name": "A&P (LEC)",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "bfe8afc2-ea05-4180-92de-b09f48c6ec6a",
+            "name": "Micro (LAB)",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "3fa9d986-1f76-4ec3-ac04-42b623cb77d0",
+            "name": "Micro (LEC)",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "5ed6021e-d89b-4754-8637-069113d7f53c",
+            "name": "Stats",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "6f1cc1bd-c07c-4213-8f7a-6e9fff88a4e7",
+            "name": "Diversity",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "f6d0f1ff-aac5-42cd-9690-9f3126140b80",
+            "name": "Prof Nursing",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Teacher": {
+      "id": "fVXU",
+      "name": "Teacher",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "2bc3672b-c77e-40b4-a388-5824f4d66ea2",
+            "name": "Koreen Byrns",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "3336af2f-c596-4a0d-ab31-7c6d137a7557",
+            "name": "Sarah Swerdlow",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "1c739372-9e95-4891-b3a2-4051bb7f99b6",
+            "name": "Olivia Long",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "32a8a4e4-85f9-43ab-8540-d6d19c6c7f49",
+            "name": "Victoria Causer",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "1b99b0c3-522b-424c-a80b-8abb95be3f2e",
+            "name": "Amber Bugajski",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "fcc18396-1ded-4515-b124-95d0fcc9ed0c",
+            "name": "Alexandra Seabol",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Done": {
+      "id": "f%7BOD",
+      "name": "Done",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Assignment Name": {
+      "id": "title",
+      "name": "Assignment Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-810c-bb43-e2f7b1f1e915"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-8146-bc79-dda7b7c6e909"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6810cbb43e2f7b1f1e915",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "3fd8263f-2f60-41f7-bd20-5cb4f96bab39"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-810c-bb43-e2f7b1f1e915"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T10:44:27.346Z ===
+=== CONVERT PAGE: Processing 1 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-810c-bb43-e2f7b1f1e915
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-810c-bb43-e2f7b1f1e915 (collection 2e1eb580-eec6-819d-85f3-000b2882a799)...
+Query result for 2e1eb580-eec6-810c-bb43-e2f7b1f1e915: 0 pages
+Block IDs: 
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:09:09.984Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "964e329d-cbb0-4fbb-b26c-5bbc9cf01ada"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "6b350197-6ccb-48aa-8f10-f037f46cb596"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:09:12.987Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:12:48.909Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "0056e325-8953-42f0-adeb-9574eaee4344"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "f837aa89-8f07-4bd0-ba91-d77d28b3a070"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:12:52.698Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:15:18.542Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "24b593e5-c737-4290-8793-b57f1b2e9878"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "bcd6e462-db72-4b7b-baf5-8b2549e05ecf"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:15:20.962Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "ec9a7255-81c5-4794-ae9d-2502ea86d110"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "fe6ec37f-3288-467b-8561-af75c2f9a0b2"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:15:23.178Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== CONVERT PAGE 2026-01-13T11:15:23.361Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:16:13.120Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "23ce9e2f-3266-46a5-98ee-9fa50b8b293c"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "829b1775-c178-4a4f-aabe-dff16a175f74"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:16:16.407Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:17:30.796Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "cd215199-58c1-4535-b4f1-199dd2c2d945"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "5753c82c-3d7a-409c-92ed-68ca50441648"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:17:33.066Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:20:56.075Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "4f78ad38-0e1c-4bdd-8956-43a7c266b2fb"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "608e9a0f-a64b-450d-897b-f3446ffe0372"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:21:01.950Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:23:08.463Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "a0424b38-20b5-4cc4-bed8-a4418fbc32dd"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "3da2e285-e70a-4eeb-afb3-e2cd36309602"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:23:12.515Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:23:13.371Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "3dcc213b-d8ec-461b-b93e-dfe60968966a"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "7e3a2e82-fe52-405d-8483-3072677e8fff"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:23:16.038Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:26:55.290Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "b5ba864a-351e-44c8-abd3-1e00d8a612f7"
+}
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "ca35cb45-f748-42a1-bea7-058add333dda"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-819d-8b57-f8df0bd6fba3","2e1eb580-eec6-8158-ba9f-c75673771438"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:26:59.453Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:29:07.150Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "830ec33c-9a11-4d29-be71-df0498b7f552"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "c569cef6-24f2-4ed1-a614-31cc2f6b93b5"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:29:10.009Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:31:21.322Z
+Page ID: 2e1eb580-eec6-819e-979e-f8155330d48a
+Total blocks in blockMap: 21
+Found 2 child_database blocks: ["2e1eb580-eec6-81c3-a74c-efe53656fad1","2e1eb580-eec6-8170-afb4-c24064f3e6b9"]
+
+Processing database: 2e1eb580-eec6-81c3-a74c-efe53656fad1
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-811b-94ef-000bfa32d0f3",
+  "cover": null,
+  "icon": {
+    "type": "external",
+    "external": {
+      "url": "https://www.notion.so/icons/gradebook_gray.svg"
+    }
+  },
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Assignments",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Assignments",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Deadline": {
+      "id": "_UjC",
+      "name": "Deadline",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Done": {
+      "id": "%60N~j",
+      "name": "Done",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Courses": {
+      "id": "w%3FC%3B",
+      "name": "Courses",
+      "description": null,
+      "type": "relation",
+      "relation": {
+        "database_id": "2e1eb580-eec6-8170-afb4-c24064f3e6b9",
+        "data_source_id": "2e1eb580-eec6-81eb-8629-000bc45a9848",
+        "type": "dual_property",
+        "dual_property": {
+          "synced_property_name": "Assignments",
+          "synced_property_id": "qkkc"
+        }
+      }
+    },
+    "Assignment Name": {
+      "id": "title",
+      "name": "Assignment Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-81c3-a74c-efe53656fad1"
+  },
+  "database_parent": {
+    "type": "page_id",
+    "page_id": "2e1eb580-eec6-819e-979e-f8155330d48a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec681c3a74cefe53656fad1",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "ca0f95c0-ace3-4f2e-ad72-9ea61a5f7dce"
+}
+
+Processing database: 2e1eb580-eec6-8170-afb4-c24064f3e6b9
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81eb-8629-000bc45a9848",
+  "cover": {
+    "type": "file",
+    "file": {
+      "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/dc66fa88-2901-4db8-b6ed-e96c99476938/832c10fa-e36c-4435-84e7-5eb2d6eec70c/1eae490d5ef25f8917bda4f850769d28.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QX4VY6LS%2F20260113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260113T113124Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJIMEYCIQDeSKgtkA%2FzcBhsE1iyjzVuhXgoFFrEbvF%2FI5JiVVjj0AIhAKzt1juTMrs7CqTrHZNWmkY%2F9fZEfvhLRWAc2pOJXswHKv8DCAQQABoMNjM3NDIzMTgzODA1Igx7Vmco51QgLY%2B%2BjD0q3AOGG2oTYOGv0zS0YdV8OMrTKcVLT95A46jq%2Bani29tLtZ4UNmUERqyVbSEDn%2F9n9HGJlTtJ0JkdxUPjtmyoIY75S5%2FGigmIVUTXhsy7XE4DlPiHcL60px0ohZTec%2FYsuniPHWtOMol36oV473E9Uz1BPA4vqc8%2B5EMYt0H7sVMq2Ut2sYXD5Ly5Ct4zkEUuJBsmqaH%2BWcf8xksTrXxjpGA14wtGO2rHn2d1h%2FdZMHjrLn3cJhzBplo8ZYDqybNDKsRUxSwd4V5v4wb6wTBFFkzsTKRb1ARvdZ1lhxxMe0FZ0Wm8wDfWDXbty3KLqOrWEOmiHPTRDgY3hJt1AnmQFZAeEozGhujvQ7Y5PqDJyUxfY0j0y%2BSWKZDAHhWAinMin6JWNJJvhFIwOmopElHkagwtW%2BhGClcS9YblFcGKK3c5kfFI7B9YLxS9NFBWeeNBFafM4dD5dYde0OvB0ZYMR8kdvztlSnAoKO2mlLO36KXFlRlYQk7lk%2BI6gr5jFGzKfDn1n9tYC957PWAPLu3F5e8GFXPdjSc3RKh2JTt1DiZUx7D7QiwCYtYtul1vSOlbibuT7e6kz%2FETd9n58%2BGAKfqApS%2F965ngLWrO1nA8MshSBLmjPqSrwrZi6lN2kDDBx5jLBjqkAU341rhDcxVorbMoDYJgRtkiGH2SJ5xNK0WLTJmHsf0XWcMbOCPdbQw7yjqkGCMbzv8KWfpinkn0xswfNZCf98ZYsB9jtNMtQ7CI6c%2BV%2FkHDmtcaZuvb8B8u1ZcgYMCEwusHbpgwY4JIaNChBzJwpvUAH%2B9Z9PjhRVXmLz6R%2BfRq9zoeG1%2FWP%2F0AvLIhWum3ESQz4s%2FZdxAs4BYiu0aM9%2FxNQjVi&X-Amz-Signature=f737a39f05ca0f61b233a3b6b0606ce3ae55c259111076d687b524956de07ce2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "expiry_time": "2026-01-13T12:31:24.129Z"
+    }
+  },
+  "icon": {
+    "type": "external",
+    "external": {
+      "url": "https://www.notion.so/icons/categories_gray.svg"
+    }
+  },
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Courses",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Courses",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Time": {
+      "id": "CbJs",
+      "name": "Time",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Professor": {
+      "id": "hQ%5D%5E",
+      "name": "Professor",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": []
+      }
+    },
+    "Assignments": {
+      "id": "qkkc",
+      "name": "Assignments",
+      "description": null,
+      "type": "relation",
+      "relation": {
+        "database_id": "2e1eb580-eec6-81c3-a74c-efe53656fad1",
+        "data_source_id": "2e1eb580-eec6-811b-94ef-000bfa32d0f3",
+        "type": "dual_property",
+        "dual_property": {
+          "synced_property_name": "Courses",
+          "synced_property_id": "w%3FC%3B"
+        }
+      }
+    },
+    "Course Code": {
+      "id": "%7D%7CQK",
+      "name": "Course Code",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Course Name": {
+      "id": "title",
+      "name": "Course Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8170-afb4-c24064f3e6b9"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-814a-aa8d-e3ae18b86474"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68170afb4c24064f3e6b9",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "6979132d-6f55-47b7-a770-8ca991460932"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-81c3-a74c-efe53656fad1","2e1eb580-eec6-8170-afb4-c24064f3e6b9"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:31:26.948Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-81c3-a74c-efe53656fad1
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-81c3-a74c-efe53656fad1 (collection 2e1eb580-eec6-811b-94ef-000bfa32d0f3)...
+Query result for 2e1eb580-eec6-81c3-a74c-efe53656fad1: 12 pages
+Block IDs: 2e1eb580-eec6-8114-b3a7-d4c60b536312, 2e1eb580-eec6-8117-801f-e948534a1569, 2e1eb580-eec6-814f-bc5f-ce4ef751a256, 2e1eb580-eec6-8150-8e6e-ec7283a53227, 2e1eb580-eec6-815d-949a-e5f653760e38, 2e1eb580-eec6-815e-a6b1-d2924f5782bb, 2e1eb580-eec6-819e-a4ab-da8355441325, 2e1eb580-eec6-81d4-bff9-e52a675bdf16, 2e1eb580-eec6-81d9-9197-c98cd63ca890, 2e1eb580-eec6-81db-a31b-e8aeadf8c7d3, 2e1eb580-eec6-81dc-a723-cad7ff5b7e60, 2e1eb580-eec6-81f1-ad76-fa75f7444bd9
+Processing database: 2e1eb580-eec6-8170-afb4-c24064f3e6b9
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8170-afb4-c24064f3e6b9 (collection 2e1eb580-eec6-81eb-8629-000bc45a9848)...
+Query result for 2e1eb580-eec6-8170-afb4-c24064f3e6b9: 7 pages
+Block IDs: 2e1eb580-eec6-810e-abce-e7c3931da584, 2e1eb580-eec6-8128-b232-d22f3b4ccb08, 2e1eb580-eec6-8135-af68-f3f6c1adacd0, 2e1eb580-eec6-8143-adbd-d0ab4c027443, 2e1eb580-eec6-8166-9486-e647878aa12a, 2e1eb580-eec6-81ea-add6-d81084adcfe1, 2e1eb580-eec6-81ff-9989-c28910b55fbc
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-13T11:33:25.402Z
+Page ID: 2e1eb580-eec6-8094-ba1c-f517ab1c1531
+Total blocks in blockMap: 47
+Found 2 child_database blocks: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-812b-8ae9-000b0981e5b0",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Tags": {
+      "id": "%3Adnx",
+      "name": "Tags",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "41407c5f-349a-4774-9865-69b64e7ed5a5",
+            "name": "math",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "c05a34d1-d76e-4d7e-9170-fa1bf1846199",
+            "name": "science",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "d7f9de9a-20b2-4a8d-8c5a-9fea46a87aaf",
+            "name": "history",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "dd47abdd-a48e-4b2a-873a-be54840d9b3a",
+            "name": "english",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Status": {
+      "id": "C%3Fu%3B",
+      "name": "Status",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Date": {
+      "id": "CWfc",
+      "name": "Date",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Grade": {
+      "id": "RW%3Aq",
+      "name": "Grade",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Exam": {
+      "id": "title",
+      "name": "Exam",
+      "description": null,
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-8158-ba9f-c75673771438"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-813a-91ee-eb4d5851629a"
+  },
+  "url": "https://www.notion.so/2e1eb580eec68158ba9fc75673771438",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "d725104a-b36e-4d42-8a0a-569cce7ecaf6"
+}
+
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e1eb580-eec6-81e4-816c-000b6195200a",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-07T12:43:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f4f0ee51-6103-403c-b08c-899b70cd2a02"
+  },
+  "last_edited_time": "2026-01-07T12:43:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e1eb580-eec6-819d-8b57-f8df0bd6fba3"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e1eb580-eec6-81c9-8d84-fdbfaf862421"
+  },
+  "url": "https://www.notion.so/2e1eb580eec6819d8b57f8df0bd6fba3",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "dc7b46fe-136d-4a7c-8901-8992e6a27a07"
+}
+
+Final databaseMap keys: ["2e1eb580-eec6-8158-ba9f-c75673771438","2e1eb580-eec6-819d-8b57-f8df0bd6fba3"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-13T11:33:27.645Z ===
+=== CONVERT PAGE: Processing 2 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e1eb580-eec6-8158-ba9f-c75673771438
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-8158-ba9f-c75673771438 (collection 2e1eb580-eec6-812b-8ae9-000b0981e5b0)...
+Query result for 2e1eb580-eec6-8158-ba9f-c75673771438: 1 pages
+Block IDs: 2e1eb580-eec6-81be-82bb-da4960c1392c
+Processing database: 2e1eb580-eec6-819d-8b57-f8df0bd6fba3
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e1eb580-eec6-819d-8b57-f8df0bd6fba3 (collection 2e1eb580-eec6-81e4-816c-000b6195200a)...
+Query result for 2e1eb580-eec6-819d-8b57-f8df0bd6fba3: 7 pages
+Block IDs: 2e1eb580-eec6-811a-ac13-c10ccb18272d, 2e1eb580-eec6-812c-91e3-e8ef5548a722, 2e1eb580-eec6-812c-af12-ecaef580f1f1, 2e1eb580-eec6-814e-b6a2-d2228dcf9c5b, 2e1eb580-eec6-816d-806c-fd8d12f28082, 2e1eb580-eec6-81d0-a6dc-c026f1ccaa30, 2e1eb580-eec6-81dc-bd0f-ced957ac8b5e
+
+=== DATABASE DETECTION LOG ===
+Timestamp: 2026-01-15T04:44:25.676Z
+Page ID: 2e9eb580-eec6-8004-8b9b-eea1996027e5
+Total blocks in blockMap: 4
+Found 1 child_database blocks: ["2e9eb580-eec6-812f-890d-e8f27b97a724"]
+
+Processing database: 2e9eb580-eec6-812f-890d-e8f27b97a724
+  - Not in databaseMap, fetching...
+  - Successfully added to databaseMap
+  - Data source object: {
+  "object": "data_source",
+  "id": "2e9eb580-eec6-8153-855a-000baed804d3",
+  "cover": null,
+  "icon": null,
+  "created_time": "2026-01-15T04:39:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+  },
+  "last_edited_time": "2026-01-15T04:39:00.000Z",
+  "title": [],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "class schedule": {
+      "id": "24ad99a4-ae2e-4aac-9033-0b29d659cc42",
+      "name": "class schedule",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "credits": {
+      "id": "763e1343-2f8b-4f75-b90e-95cbb37be5a2",
+      "name": "credits",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "course code ": {
+      "id": "822509c0-05a0-4c16-b687-1039cb9f290f",
+      "name": "course code ",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "professor": {
+      "id": "994c3fad-7360-45b3-a228-83f439969ad6",
+      "name": "professor",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+            "name": "example",
+            "color": "orange",
+            "description": null
+          }
+        ]
+      }
+    },
+    "location": {
+      "id": "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67",
+      "name": "location",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "subject category": {
+      "id": "dd5f1ad2-3040-4742-8266-666a81fdf6a7",
+      "name": "subject category",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "GbYc",
+            "name": "minor",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "QK<M",
+            "name": "workshops",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "s]u^",
+            "name": "lecture",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "KMrj",
+            "name": "seminar",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "baiR",
+            "name": "lab",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "]OPx",
+            "name": "elective",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "ZzuD",
+            "name": "major",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "2e9eb580-eec6-812f-890d-e8f27b97a724"
+  },
+  "database_parent": {
+    "type": "block_id",
+    "block_id": "2e9eb580-eec6-8086-8b70-c71ebda4f8b3"
+  },
+  "url": "https://www.notion.so/2e9eb580eec6812f890de8f27b97a724",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "aae17306-2d06-4618-a175-71895fbb9857"
+}
+
+Final databaseMap keys: ["2e9eb580-eec6-812f-890d-e8f27b97a724"]
+=== END DATABASE DETECTION LOG ===
+
+=== CONVERT PAGE 2026-01-15T04:44:27.322Z ===
+=== CONVERT PAGE: Processing 1 databases ===
+fetchDatabaseEntries: true
+notionClient exists: true
+Processing database: 2e9eb580-eec6-812f-890d-e8f27b97a724
+Checking if should fetch entries: fetchDatabaseEntries=true, notionClient=true
+Fetching entries for database 2e9eb580-eec6-812f-890d-e8f27b97a724 (collection 2e9eb580-eec6-8153-855a-000baed804d3)...
+Query result for 2e9eb580-eec6-812f-890d-e8f27b97a724: 7 pages
+Block IDs: 2e9eb580-eec6-8135-bac0-c2fae2c9694a, 2e9eb580-eec6-8147-8db9-cbb17e2c154b, 2e9eb580-eec6-814a-b349-ff67d2896eed, 2e9eb580-eec6-815f-a5fd-ca87c8a61615, 2e9eb580-eec6-81b7-b1ed-c4bbe653ea48, 2e9eb580-eec6-81d7-8ce1-c28a0883c0d6, 2e9eb580-eec6-81ec-91e3-f1e8b58fad80

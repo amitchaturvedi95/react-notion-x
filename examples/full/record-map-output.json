@@ -1,0 +1,413 @@
+{
+  "block": {
+    "2e9eb580-eec6-8004-8b9b-eea1996027e5": {
+      "type": "reader",
+      "value": {
+        "id": "2e9eb580-eec6-8004-8b9b-eea1996027e5",
+        "content": [
+          "2e9eb580-eec6-8086-8b70-c71ebda4f8b3",
+          "2e9eb580-eec6-8029-bc6c-c0cec0405c2e"
+        ],
+        "properties": {
+          "title": [
+            [
+              "Amit-DB-Testing"
+            ]
+          ]
+        },
+        "format": {},
+        "type": "page",
+        "created_time": 1768451880000,
+        "last_edited_time": 1768451940000,
+        "created_by_table": "notion_user",
+        "created_by_id": "2e7d872b-594c-8106-81da-0002b8694b92",
+        "last_edited_by_table": "user",
+        "last_edited_by_id": "2e7d872b-594c-8106-81da-0002b8694b92",
+        "alive": true,
+        "parent_table": "space"
+      }
+    },
+    "2e9eb580-eec6-8086-8b70-c71ebda4f8b3": {
+      "type": "reader",
+      "value": {
+        "id": "2e9eb580-eec6-8086-8b70-c71ebda4f8b3",
+        "content": [
+          "2e9eb580-eec6-812f-890d-e8f27b97a724"
+        ],
+        "properties": {
+          "title": [
+            [
+              "All Courses",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "block_color": "pink_background",
+          "page_icon": "📓"
+        },
+        "type": "callout",
+        "created_time": 1768451940000,
+        "last_edited_time": 1768451940000,
+        "created_by_table": "notion_user",
+        "created_by_id": "2e7d872b-594c-8106-81da-0002b8694b92",
+        "last_edited_by_table": "user",
+        "last_edited_by_id": "2e7d872b-594c-8106-81da-0002b8694b92",
+        "alive": true,
+        "parent_id": "2e9eb580-eec6-8004-8b9b-eea1996027e5",
+        "parent_table": "block"
+      }
+    },
+    "2e9eb580-eec6-8029-bc6c-c0cec0405c2e": {
+      "type": "reader",
+      "value": {
+        "id": "2e9eb580-eec6-8029-bc6c-c0cec0405c2e",
+        "format": {
+          "block_color": "default"
+        },
+        "type": "text",
+        "created_time": 1768451940000,
+        "last_edited_time": 1768451940000,
+        "created_by_table": "notion_user",
+        "created_by_id": "2e7d872b-594c-8106-81da-0002b8694b92",
+        "last_edited_by_table": "user",
+        "last_edited_by_id": "2e7d872b-594c-8106-81da-0002b8694b92",
+        "alive": true,
+        "parent_id": "2e9eb580-eec6-8004-8b9b-eea1996027e5",
+        "parent_table": "block"
+      }
+    },
+    "2e9eb580-eec6-812f-890d-e8f27b97a724": {
+      "type": "reader",
+      "value": {
+        "id": "2e9eb580-eec6-812f-890d-e8f27b97a724",
+        "properties": {
+          "title": [
+            [
+              "New database"
+            ]
+          ]
+        },
+        "format": {},
+        "type": "collection_view",
+        "created_time": 1768451940000,
+        "last_edited_time": 1768451940000,
+        "created_by_table": "notion_user",
+        "created_by_id": "2e7d872b-594c-8106-81da-0002b8694b92",
+        "last_edited_by_table": "user",
+        "last_edited_by_id": "2e7d872b-594c-8106-81da-0002b8694b92",
+        "alive": true,
+        "parent_id": "2e9eb580-eec6-8086-8b70-c71ebda4f8b3",
+        "parent_table": "block",
+        "collection_id": "2e9eb580-eec6-812f-890d-e8f27b97a724",
+        "view_ids": [
+          "2e9eb580-eec6-812f-890d-e8f27b97a724-default-view"
+        ]
+      }
+    }
+  },
+  "collection": {
+    "2e9eb580-eec6-8153-855a-000baed804d3": {
+      "role": "reader",
+      "value": {
+        "id": "2e9eb580-eec6-8153-855a-000baed804d3",
+        "version": 0,
+        "name": [],
+        "schema": {
+          "title": {
+            "name": "Name",
+            "type": "title"
+          },
+          "24ad99a4-ae2e-4aac-9033-0b29d659cc42": {
+            "name": "class schedule",
+            "type": "text"
+          },
+          "763e1343-2f8b-4f75-b90e-95cbb37be5a2": {
+            "name": "credits",
+            "type": "number",
+            "number_format": "number"
+          },
+          "822509c0-05a0-4c16-b687-1039cb9f290f": {
+            "name": "course code ",
+            "type": "text"
+          },
+          "994c3fad-7360-45b3-a228-83f439969ad6": {
+            "name": "professor",
+            "type": "select",
+            "options": [
+              {
+                "id": "b7519add-dde2-4262-9127-acd91d5b0cac",
+                "color": "orange",
+                "value": "example"
+              }
+            ]
+          },
+          "c7f34c91-ca10-42a9-bdcc-fe73d1d49c67": {
+            "name": "location",
+            "type": "text"
+          },
+          "dd5f1ad2-3040-4742-8266-666a81fdf6a7": {
+            "name": "subject category",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "GbYc",
+                "color": "default",
+                "value": "minor"
+              },
+              {
+                "id": "QK<M",
+                "color": "green",
+                "value": "workshops"
+              },
+              {
+                "id": "s]u^",
+                "color": "blue",
+                "value": "lecture"
+              },
+              {
+                "id": "KMrj",
+                "color": "purple",
+                "value": "seminar"
+              },
+              {
+                "id": "baiR",
+                "color": "orange",
+                "value": "lab"
+              },
+              {
+                "id": "]OPx",
+                "color": "red",
+                "value": "elective"
+              },
+              {
+                "id": "ZzuD",
+                "color": "pink",
+                "value": "major"
+              }
+            ]
+          }
+        },
+        "icon": "",
+        "parent_id": "",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": ""
+      }
+    }
+  },
+  "collection_view": {
+    "2e9eb580-eec6-812f-890d-e8f27b97a724-default-view": {
+      "role": "reader",
+      "value": {
+        "id": "2e9eb580-eec6-812f-890d-e8f27b97a724-default-view",
+        "type": "table",
+        "name": "Default View",
+        "format": {
+          "table_wrap": true,
+          "table_properties": []
+        },
+        "version": 1,
+        "alive": true,
+        "parent_id": "2e9eb580-eec6-812f-890d-e8f27b97a724",
+        "parent_table": "block",
+        "query2": {
+          "group_by": ""
+        },
+        "page_sort": []
+      }
+    }
+  },
+  "collection_query": {
+    "2e9eb580-eec6-8153-855a-000baed804d3": {
+      "2e9eb580-eec6-812f-890d-e8f27b97a724-default-view": {
+        "type": "table",
+        "total": 7,
+        "blockIds": [
+          "2e9eb580-eec6-8135-bac0-c2fae2c9694a",
+          "2e9eb580-eec6-8147-8db9-cbb17e2c154b",
+          "2e9eb580-eec6-814a-b349-ff67d2896eed",
+          "2e9eb580-eec6-815f-a5fd-ca87c8a61615",
+          "2e9eb580-eec6-81b7-b1ed-c4bbe653ea48",
+          "2e9eb580-eec6-81d7-8ce1-c28a0883c0d6",
+          "2e9eb580-eec6-81ec-91e3-f1e8b58fad80"
+        ],
+        "aggregationResults": [],
+        "collection_group_results": {
+          "type": "results",
+          "blockIds": [
+            "2e9eb580-eec6-8135-bac0-c2fae2c9694a",
+            "2e9eb580-eec6-8147-8db9-cbb17e2c154b",
+            "2e9eb580-eec6-814a-b349-ff67d2896eed",
+            "2e9eb580-eec6-815f-a5fd-ca87c8a61615",
+            "2e9eb580-eec6-81b7-b1ed-c4bbe653ea48",
+            "2e9eb580-eec6-81d7-8ce1-c28a0883c0d6",
+            "2e9eb580-eec6-81ec-91e3-f1e8b58fad80"
+          ],
+          "hasMore": false
+        }
+      }
+    }
+  },
+  "signed_urls": {},
+  "notion_user": {},
+  "raw": {
+    "page": {
+      "object": "page",
+      "id": "2e9eb580-eec6-8004-8b9b-eea1996027e5",
+      "created_time": "2026-01-15T04:38:00.000Z",
+      "last_edited_time": "2026-01-15T04:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "workspace",
+        "workspace": true
+      },
+      "archived": false,
+      "in_trash": false,
+      "is_locked": false,
+      "properties": {
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Amit-DB-Testing",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Amit-DB-Testing",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Amit-DB-Testing-2e9eb580eec680048b9beea1996027e5",
+      "public_url": null,
+      "request_id": "fdd2df09-c120-4504-8e8a-be5f36684299"
+    },
+    "block": {
+      "object": "block",
+      "id": "2e9eb580-eec6-8004-8b9b-eea1996027e5",
+      "parent": {
+        "type": "workspace",
+        "workspace": true
+      },
+      "created_time": "2026-01-15T04:38:00.000Z",
+      "last_edited_time": "2026-01-15T04:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "child_page",
+      "child_page": {
+        "title": "Amit-DB-Testing"
+      },
+      "request_id": "7500ca0b-9a46-48d9-b17e-1dd777d900af"
+    },
+    "children": [
+      {
+        "object": "block",
+        "id": "2e9eb580-eec6-8086-8b70-c71ebda4f8b3",
+        "parent": {
+          "type": "page_id",
+          "page_id": "2e9eb580-eec6-8004-8b9b-eea1996027e5"
+        },
+        "created_time": "2026-01-15T04:39:00.000Z",
+        "last_edited_time": "2026-01-15T04:39:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+        },
+        "has_children": true,
+        "archived": false,
+        "in_trash": false,
+        "type": "callout",
+        "callout": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "All Courses",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "All Courses",
+              "href": null
+            }
+          ],
+          "icon": {
+            "type": "emoji",
+            "emoji": "📓"
+          },
+          "color": "pink_background"
+        }
+      },
+      {
+        "object": "block",
+        "id": "2e9eb580-eec6-8029-bc6c-c0cec0405c2e",
+        "parent": {
+          "type": "page_id",
+          "page_id": "2e9eb580-eec6-8004-8b9b-eea1996027e5"
+        },
+        "created_time": "2026-01-15T04:39:00.000Z",
+        "last_edited_time": "2026-01-15T04:39:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "2e7d872b-594c-8106-81da-0002b8694b92"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [],
+          "color": "default"
+        }
+      }
+    ]
+  }
+}

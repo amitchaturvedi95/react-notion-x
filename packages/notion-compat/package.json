@@ -36,6 +36,6 @@
     "notion-client": "workspace:*"
   },
   "peerDependencies": {
-    "@notionhq/client": "^2.2.0"
+    "@notionhq/client": "^5.0.0"
   }
 }

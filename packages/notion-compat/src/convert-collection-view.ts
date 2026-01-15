@@ -19,7 +19,7 @@ export function createDefaultCollectionView(
     version: 1,
     alive: true,
     parent_id: databaseId,
-    parent_table: 'collection',
+    parent_table: 'block',
     query2: {
       group_by: '' as any
     }

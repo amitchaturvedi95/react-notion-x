@@ -72,6 +72,7 @@ export async function getStaticPaths() {
 }
 
 export default function Page({ recordMap }: { recordMap: ExtendedRecordMap }) {
+  console.log(JSON.stringify(recordMap))
   return (
     <NotionPage
       recordMap={recordMap}

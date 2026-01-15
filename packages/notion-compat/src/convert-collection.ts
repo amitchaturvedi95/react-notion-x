@@ -7,15 +7,18 @@ import { convertRichText } from './convert-rich-text'
  * Converts a Notion API database to unofficial API collection format
  */
 export function convertCollection(database: types.Database): notion.Collection {
+  // In 2025-09-03, data source has properties, database may not
+  const dbAny = database as any
+
   const collection: notion.Collection = {
     id: database.id,
-    version: 1,
+    version: 0,
     name: database.title ? convertRichText(database.title as any) : [['']],
     schema: {},
-    icon: '',
+    icon: database.icon?.type === 'emoji' ? database.icon.emoji || '' : '',
     parent_id: '',
     parent_table: 'block',
-    alive: !database.archived,
+    alive: !(dbAny.archived ?? false),
     copied_from: ''
   }
 
@@ -48,15 +51,20 @@ export function convertCollection(database: types.Database): notion.Collection {
   }
 
   // Convert database properties to collection schema
-  if (database.properties) {
-    for (const [propertyId, property] of Object.entries(database.properties)) {
+  // In 2025-09-03, properties come from data source
+  const properties = dbAny.properties || {}
+  if (properties) {
+    for (const [propertyName, property] of Object.entries(properties)) {
+      if (!property) continue
+      const prop = property as any
+
       const schema: notion.CollectionPropertySchema = {
-        name: property.name || '',
-        type: convertPropertyType(property.type)
+        name: prop.name || '',
+        type: convertPropertyType(prop.type)
       }
 
       // Add property-specific configuration
-      switch (property.type) {
+      switch (prop.type) {
         case 'number':
           if ((property as any).number) {
             schema.number_format = (property as any).number.format || 'number'
@@ -100,17 +108,22 @@ export function convertCollection(database: types.Database): notion.Collection {
           break
 
         case 'formula':
-          if ((property as any).formula) {
+          if (prop.formula) {
             schema.formula = {
               type: 'formula',
-              name: property.name || '',
-              formula: (property as any).formula.expression || ''
+              name: prop.name || '',
+              formula: prop.formula.expression || ''
             } as any
           }
           break
       }
 
-      collection.schema[propertyId] = schema
+      // Use the property ID as the schema key (not the property name)
+      // This is critical for V3 compatibility
+      // Decode URL-encoded property IDs (e.g., %3Adnx -> :dnx)
+      const rawKey = prop.id || propertyName
+      const schemaKey = decodeURIComponent(rawKey)
+      collection.schema[schemaKey] = schema
     }
   }
 

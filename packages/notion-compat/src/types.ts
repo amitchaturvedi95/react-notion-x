@@ -34,9 +34,8 @@ export type PartialDatabase = Awaited<
 
 export type Database = Extract<PartialDatabase, { title: unknown }>
 
-export type DatabaseQueryResponse = Awaited<
-  ReturnType<InstanceType<typeof Client>['databases']['query']>
->
+// In v5, databases.query moved - using any for now
+export type DatabaseQueryResponse = any
 
 export type PageMap = Record<string, PartialPage>
 export type BlockMap = Record<string, PartialBlock>

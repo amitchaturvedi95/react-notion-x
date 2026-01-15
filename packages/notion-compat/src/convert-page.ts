@@ -1,3 +1,6 @@
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+
 import type { Client } from '@notionhq/client'
 import type * as notion from 'notion-types'
 
@@ -88,12 +91,30 @@ export async function convertPage({
   const collectionViewMap: notion.CollectionViewMap = {}
   const collectionQuery: any = {}
 
+  const logEntries: string[] = []
+  const log = (msg: string) => {
+    console.log(msg)
+    logEntries.push(msg)
+  }
+
+  log(
+    `=== CONVERT PAGE: Processing ${Object.keys(databaseMap).length} databases ===`
+  )
+  log(`fetchDatabaseEntries: ${fetchDatabaseEntries}`)
+  log(`notionClient exists: ${!!notionClient}`)
+
   for (const [databaseId, database] of Object.entries(databaseMap)) {
+    log(`Processing database: ${databaseId}`)
     const typedDatabase = database as types.Database
     const collection = convertCollection(typedDatabase)
     const collectionView = createDefaultCollectionView(databaseId, 'table')
 
-    collectionMap[databaseId] = {
+    // The actual collection ID is the data source ID, not the database block ID
+    const collectionId = collection.id
+
+    // Use collectionId (data source ID) as the key, not databaseId (database block ID)
+    // This matches V3 format where collections are keyed by data source ID
+    collectionMap[collectionId] = {
       role: 'reader',
       value: collection
     }
@@ -104,17 +125,33 @@ export async function convertPage({
     }
 
     // Fetch database entries if requested
+    log(
+      `Checking if should fetch entries: fetchDatabaseEntries=${fetchDatabaseEntries}, notionClient=${!!notionClient}`
+    )
     if (fetchDatabaseEntries && notionClient) {
+      log(
+        `Fetching entries for database ${databaseId} (collection ${collectionId})...`
+      )
       try {
-        const queryResult = await notionClient.databases.query({
-          database_id: databaseId,
-          page_size: maxDatabaseEntries
+        // In v5, use the data_sources endpoint with the collection ID (data source ID)
+        const queryResult = await (notionClient as any).request({
+          method: 'post',
+          path: `data_sources/${collectionId}/query`,
+          body: {
+            page_size: maxDatabaseEntries
+          }
         })
+
+        log(
+          `Query result for ${databaseId}: ${queryResult.results.length} pages`
+        )
 
         // Build collection query result
         const blockIds = queryResult.results.map((page: any) => page.id)
+        log(`Block IDs: ${blockIds.join(', ')}`)
 
-        collectionQuery[databaseId] = {
+        // Use the actual collection ID (data source ID) as the key, not the database block ID
+        collectionQuery[collectionId] = {
           [collectionView.id]: {
             type: collectionView.type,
             total: queryResult.results.length,
@@ -135,8 +172,22 @@ export async function convertPage({
           }
         }
       } catch (err: any) {
-        console.warn(`Failed to query database ${databaseId}:`, err.message)
+        const errMsg = `Failed to query database ${databaseId}: ${err.message}`
+        console.warn(errMsg)
+        logEntries.push(errMsg)
       }
+    }
+  }
+
+  // Write logs to file
+  if (logEntries.length > 0) {
+    try {
+      const logPath = join(process.cwd(), 'notion-compat-debug.log')
+      const timestamp = new Date().toISOString()
+      const logContent = `\n=== CONVERT PAGE ${timestamp} ===\n${logEntries.join('\n')}\n`
+      writeFileSync(logPath, logContent, { flag: 'a' })
+    } catch {
+      // Ignore file write errors
     }
   }
 
@@ -171,11 +222,10 @@ export function convertPageBlock({
   pageFont?: 'default' | 'serif' | 'mono'
   smallText?: boolean
 }): notion.Block | null {
-  const partialPage = pageMap[pageId]
-  const page = partialPage as types.Page
-
-  if (page) {
-    const compatPageBlock = convertBlock({
+  const pageBlock = blockMap[pageId]
+  if (pageBlock && (pageBlock as any).object === 'page') {
+    const page = pageBlock as unknown as types.Page
+    const compatBlock = convertBlock({
       block: { ...page, type: 'child_page' } as unknown as types.Block,
       children: blockChildrenMap[page.id],
       pageMap,
@@ -183,30 +233,99 @@ export function convertPageBlock({
       parentMap
     })
 
-    // Apply page format settings
-    if (compatPageBlock && compatPageBlock.format) {
-      // Apply full-width setting
+    if (compatBlock) {
+      const fileIds: string[] = []
+
+      // Set page icon
+      if (page.icon) {
+        switch (page.icon.type) {
+          case 'emoji':
+            compatBlock.format.page_icon = page.icon.emoji
+            break
+
+          case 'external':
+            compatBlock.format.page_icon = page.icon.external.url
+            break
+
+          case 'file': {
+            const iconUrl = page.icon.file.url
+            if (iconUrl) {
+              compatBlock.format.page_icon = iconUrl
+              // Extract file ID if present
+              const fileIdMatch = iconUrl.match(
+                /([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})/
+              )
+              if (fileIdMatch && fileIdMatch[1]) {
+                fileIds.push(fileIdMatch[1])
+              }
+            }
+            break
+          }
+        }
+      }
+
+      // Set page cover
+      if (page.cover) {
+        switch (page.cover.type) {
+          case 'external':
+            if (page.cover.external.url) {
+              compatBlock.format.page_cover = page.cover.external.url
+            }
+            break
+
+          case 'file': {
+            const coverUrl = page.cover.file.url
+            if (!coverUrl) break
+            // Extract file ID and filename from URL for attachment: format
+            const urlMatch = coverUrl.match(
+              /([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})\/([^?]+)/
+            )
+            if (urlMatch && urlMatch[1] && urlMatch[2]) {
+              const fileId = urlMatch[1]
+              const filename = urlMatch[2]
+              // Use attachment: format like v3
+              compatBlock.format.page_cover = `attachment:${fileId}:${filename}`
+              fileIds.push(fileId)
+            } else {
+              // Fallback to URL if we can't parse it
+              compatBlock.format.page_cover = coverUrl
+            }
+            break
+          }
+        }
+
+        // Set cover position if available
+        compatBlock.format.page_cover_position = 0.5 // Default center position
+      }
+
+      // Add file_ids array if we have any files
+      if (fileIds.length > 0) {
+        ;(compatBlock as any).file_ids = fileIds
+      }
+
+      // Apply fullWidth option
       if (fullWidth !== undefined) {
-        compatPageBlock.format.page_full_width = fullWidth
+        compatBlock.format.page_full_width = fullWidth
       } else {
-        // Smart default: full-width for database pages or pages with covers
-        const isDatabasePage = page.parent?.type === 'database_id'
-        const hasCover = !!page.cover
-        compatPageBlock.format.page_full_width = isDatabasePage || hasCover
+        // Smart default: enable full-width for pages with covers or database pages
+        const hasFullWidthIndicator = !!(
+          page.cover || page.parent?.type === 'database_id'
+        )
+        compatBlock.format.page_full_width = hasFullWidthIndicator
       }
 
-      // Apply page font (not available in official API, so use provided value or default)
-      if (pageFont) {
-        compatPageBlock.format.page_font = pageFont
+      // Apply pageFont option
+      if (pageFont && pageFont !== 'default') {
+        compatBlock.format.page_font = pageFont
       }
 
-      // Apply small text setting (not available in official API, so use provided value or default)
+      // Apply smallText option
       if (smallText !== undefined) {
-        compatPageBlock.format.page_small_text = smallText
+        compatBlock.format.page_small_text = smallText
       }
     }
 
-    return compatPageBlock
+    return compatBlock
   }
 
   return null

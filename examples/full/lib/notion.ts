@@ -13,9 +13,9 @@ import { getPreviewImageMap } from './preview-images'
 const notion = useOfficialNotionAPI
   ? new NotionCompatAPI(new Client({ auth: process.env.NOTION_TOKEN }))
   : new NotionAPI({
-      activeUser: 'a8ee6b11-07a9-4d0a-993f-c4c4590e42ff',
+      activeUser: '2e7d872b-594c-8106-81da-0002b8694b92',
       authToken:
-        'v03:eyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..Z8R8gQ0tZ42obG2-oceTGg.Y8bi8Ubk5-7iWA1AJ3pzHyQCqfbXARQhbazmymm0QS-lEqw0fxV9XFsGUT-hv-QvUMN39olx9IuD6aLgND4A91iLMEVSjY8Mi3U0i9b0SsVGmte4FBNM759v1rSldOTN1hE-JOMX0He63EFai6gZ71aQiUY-o8U550LdbSxPqO5LILyG6tswka9Bu0EIeltZ2KzmVdhVJH8Xe4QJqqtljW8G4MDeuv-Wi72DC2ANf5A-xoP9gY_yFgEG3jOF_pyCkZQXzA6AfkyjCarY5w2qgZLBNFHHvLdUT5wOwbHaN7ng4xxLBCdkAzhr0mrib9_jLqYsjHEnmeyZbl8L_3zxCg.ABTGHFPJoigM5609UXMVBS25k58KUyz65dNz9n7qm7c'
+        'v03:eyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..pgpn2gq2d4nC-3lVveVwUA.0quYXiKI0ciP2C1ELBNrF5GRphoTH0UJ1ZzpRkzKWaUSsRlfPyqhSevoYB1moZXa9rDMb-DhwEyUmciS11xN11avXCcfae1dNNdL7IEPM0OCVyRuvXhXKuahk8fi-YdxnR9t87T3lUAG1PBDuhaOeg0skp4y0NVz1rzLN5Mon6XI71oneztqRFPp_cmvHcOTA9crKylh3ZI02Nbtk8CZisuhoNfZWu7qlZSquSozhmeKZESIH8ld2Af1FfLIHK5XCN5EUx-S4HyVOSPQ1Y969HG2AzS64jWZcDItlAIlxzUpPcbUlb-AleKAFhbCq2ty6zsZrg_ogT519WhmHIR5W7A6YA2rwo_W_MEhwajvoSYqWD1ao6q1Ob04em1DLt2Z.RE9hsmtU5IISY5H-7xl4OlzeWUm_YXRJZgWC1EAn1Kw'
     })
 
 if (useOfficialNotionAPI) {
@@ -26,7 +26,11 @@ if (useOfficialNotionAPI) {
 }
 
 export async function getPage(pageId: string): Promise<ExtendedRecordMap> {
-  const recordMap = await notion.getPage(pageId, { fetchRelationPages: true })
+  const recordMap = await notion.getPage(pageId, {
+    fetchRelationPages: true,
+    fetchDatabaseEntries: true, // For official API (v5)
+    fetchCollections: true // For unofficial API (v3) - populates collection_query
+  } as any)
 
   if (previewImagesEnabled) {
     const previewImageMap = await getPreviewImageMap(recordMap)

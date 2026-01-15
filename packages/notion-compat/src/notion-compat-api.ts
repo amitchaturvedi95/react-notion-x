@@ -1,3 +1,6 @@
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+
 import type { Client } from '@notionhq/client'
 import type * as notion from 'notion-types'
 import { parsePageId } from 'notion-utils'
@@ -10,9 +13,11 @@ import { convertPage } from './convert-page'
 
 export class NotionCompatAPI {
   client: Client
+  private apiVersion: string
 
-  constructor(client: Client) {
+  constructor(client: Client, options?: { apiVersion?: string }) {
     this.client = client
+    this.apiVersion = options?.apiVersion || '2025-09-03'
   }
 
   public async getPage(
@@ -60,10 +65,66 @@ export class NotionCompatAPI {
       this.client.blocks.retrieve({ block_id: pageId }),
       this.getAllBlockChildren(pageId)
     ])
+
     const { blockMap, blockChildrenMap, pageMap, databaseMap, parentMap } =
       await this.resolvePage(pageId, {
         concurrency: options?.concurrency
       })
+
+    // Extract database IDs from child_database blocks and fetch them
+    const databaseIds = this.extractDatabaseIds(blockMap)
+
+    // Log to file for debugging
+    const logPath = join(process.cwd(), 'notion-compat-debug.log')
+    const logEntries: string[] = []
+
+    logEntries.push(`\n=== DATABASE DETECTION LOG ===`)
+    logEntries.push(`Timestamp: ${new Date().toISOString()}`)
+    logEntries.push(`Page ID: ${pageId}`)
+    logEntries.push(`Total blocks in blockMap: ${Object.keys(blockMap).length}`)
+    logEntries.push(
+      `Found ${databaseIds.length} child_database blocks: ${JSON.stringify(databaseIds)}`
+    )
+
+    console.log(
+      `Found ${databaseIds.length} databases from child_database blocks:`,
+      databaseIds
+    )
+
+    for (const dbId of databaseIds) {
+      logEntries.push(`\nProcessing database: ${dbId}`)
+
+      if (!databaseMap[dbId]) {
+        logEntries.push(`  - Not in databaseMap, fetching...`)
+        const dataSource = await this.getDataSource(dbId)
+
+        if (dataSource) {
+          databaseMap[dbId] = dataSource
+          logEntries.push(`  - Successfully added to databaseMap`)
+          logEntries.push(
+            `  - Data source object: ${JSON.stringify(dataSource, null, 2)}`
+          )
+          console.log(`Added database ${dbId} to databaseMap`)
+        } else {
+          logEntries.push(`  - Failed to fetch data source`)
+        }
+      } else {
+        logEntries.push(`  - Already in databaseMap`)
+      }
+    }
+
+    logEntries.push(
+      `\nFinal databaseMap keys: ${JSON.stringify(Object.keys(databaseMap))}`
+    )
+    logEntries.push(`=== END DATABASE DETECTION LOG ===\n`)
+
+    // Write log to file
+    try {
+      writeFileSync(logPath, logEntries.join('\n'), { flag: 'a' })
+      console.log(` Debug log written to: ${logPath}`)
+    } catch (err: any) {
+      console.warn('Failed to write debug log:', err.message)
+    }
 
     const recordMap = await convertPage({
       pageId,
@@ -76,7 +137,7 @@ export class NotionCompatAPI {
       pageFont: options?.pageFont,
       smallText: options?.smallText,
       fetchDatabaseEntries: options?.fetchDatabaseEntries ?? true,
-      maxDatabaseEntries: options?.maxDatabaseEntries ?? 100,
+      maxDatabaseEntries: options?.maxDatabaseEntries,
       notionClient: this.client
     })
 
@@ -86,18 +147,135 @@ export class NotionCompatAPI {
       children
     }
 
+    // Debug: Print recordMap structure for comparison
+    const recordMapJson = JSON.stringify(recordMap, null, 2)
+    console.log('\n=== RECORD MAP STRUCTURE ===')
+    console.log('Block count:', Object.keys(recordMap.block).length)
+    console.log('Collection count:', Object.keys(recordMap.collection).length)
+    console.log(
+      'Collection view count:',
+      Object.keys(recordMap.collection_view).length
+    )
+    console.log(
+      'Collection query keys:',
+      Object.keys(recordMap.collection_query)
+    )
+    console.log('\nFull recordMap JSON:')
+    console.log(recordMapJson)
+    console.log('=== END RECORD MAP ===\n')
+
+    // Write to file for easy comparison
+    try {
+      const outputPath = join(process.cwd(), 'record-map-output.json')
+      writeFileSync(outputPath, recordMapJson, 'utf8')
+      console.log(`✅ RecordMap written to: ${outputPath}`)
+    } catch (err: any) {
+      console.warn('Failed to write recordMap to file:', err.message)
+    }
+
     return recordMap
+  }
+
+  /**
+   * Extract database IDs from collection_view blocks in the blockMap
+   */
+  private extractDatabaseIds(blockMap: any): string[] {
+    const databaseIds: string[] = []
+
+    for (const [blockId, blockData] of Object.entries(blockMap)) {
+      const block = blockData as any
+      if (block.type === 'child_database') {
+        // child_database blocks have the database ID as their block ID
+        databaseIds.push(blockId)
+      }
+    }
+
+    return databaseIds
+  }
+
+  /**
+   * Find inline databases that are children of the given page
+   * Uses API version 2025-09-03 is_inline property
+   */
+  private async findInlineDatabases(pageId: string): Promise<any[]> {
+    try {
+      // In 2025-09-03, search for 'data_source' instead of 'database'
+      const searchResults = await (this.client.search as any)({
+        filter: {
+          value: 'data_source',
+          property: 'object'
+        },
+        page_size: 100
+      })
+
+      // Filter for inline data sources that belong to this page
+      const inlineDbs = searchResults.results.filter((result: any) => {
+        return (
+          result.object === 'data_source' &&
+          result.database_parent?.type === 'page_id' &&
+          result.database_parent?.page_id === pageId
+        )
+      })
+
+      console.log(
+        `Found ${inlineDbs.length} inline databases for page ${pageId}`
+      )
+      return inlineDbs
+    } catch (err: any) {
+      console.warn('Failed to search for inline databases:', err.message)
+      return []
+    }
+  }
+
+  /**
+   * Get data source for a database (API version 2025-09-03)
+   * Databases now have child data_sources with the schema
+   */
+  private async getDataSource(databaseId: string): Promise<any> {
+    try {
+      const database = await this.client.databases.retrieve({
+        database_id: databaseId
+      })
+
+      // In 2025-09-03, databases have data_sources array
+      if (
+        (database as any).data_sources &&
+        (database as any).data_sources.length > 0
+      ) {
+        const dataSourceId = (database as any).data_sources[0].id
+
+        // Fetch the data source schema using the new endpoint
+        const dataSource = await (this.client as any).request({
+          method: 'get',
+          path: `data_sources/${dataSourceId}`
+        })
+
+        return dataSource
+      }
+
+      // Fallback: return database as-is for older API versions
+      return database
+    } catch (err: any) {
+      console.warn(
+        `Failed to get data source for database ${databaseId}:`,
+        err.message
+      )
+      return null
+    }
   }
 
   public async getDatabase(databaseId: string): Promise<{
     collection: notion.Collection
     collectionView: notion.CollectionView
   }> {
-    const database = await this.client.databases.retrieve({
-      database_id: databaseId
-    })
+    // Use data source endpoint for 2025-09-03
+    const dataSource = await this.getDataSource(databaseId)
 
-    const typedDatabase = database as types.Database
+    if (!dataSource) {
+      throw new Error(`Failed to retrieve database ${databaseId}`)
+    }
+
+    const typedDatabase = dataSource as types.Database
     const collection = convertCollection(typedDatabase)
     const collectionView = createDefaultCollectionView(databaseId, 'table')
 
@@ -115,11 +293,15 @@ export class NotionCompatAPI {
       pageSize?: number
     }
   ): Promise<types.DatabaseQueryResponse> {
-    return this.client.databases.query({
-      database_id: databaseId,
-      filter: options?.filter,
-      sorts: options?.sorts,
-      page_size: options?.pageSize || 100
+    // In v5, use the request method for database queries
+    return (this.client as any).request({
+      method: 'post',
+      path: `databases/${databaseId}/query`,
+      body: {
+        filter: options?.filter,
+        sorts: options?.sorts,
+        page_size: options?.pageSize || 100
+      }
     })
   }
 
