@@ -58,13 +58,50 @@ export function convertPage({
       ])
   )
 
+  // Add space information if available from any block
+  const spaceId = extractSpaceId(compatBlockMap)
+  const teamInfo = spaceId ? createTeamInfo(spaceId) : {}
+
   return {
     block: compatBlockMap as any,
     collection: {},
     collection_view: {},
     collection_query: {},
     signed_urls: {},
-    notion_user: {}
+    notion_user: {},
+    ...(spaceId && { space: teamInfo })
+  }
+}
+
+function extractSpaceId(
+  blockMap: Record<string, { type: string; value: any }>
+): string | null {
+  // Try to extract space_id from any block that has it
+  for (const block of Object.values(blockMap)) {
+    if (block.value.space_id) {
+      return block.value.space_id
+    }
+  }
+  return null
+}
+
+function createTeamInfo(spaceId: string): Record<string, any> {
+  return {
+    [spaceId]: {
+      value: {
+        id: spaceId,
+        name: 'Notion Workspace',
+        space_id: spaceId,
+        created_time: Date.now() * 1000,
+        last_edited_time: Date.now() * 1000,
+        permissions: [
+          {
+            role: 'editor',
+            type: 'space_permission'
+          }
+        ]
+      }
+    }
   }
 }
 

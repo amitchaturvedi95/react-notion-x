@@ -18,8 +18,15 @@ export function convertBlock({
   blockMap?: types.BlockMap
   parentMap?: types.ParentMap
 }): notion.Block {
-  const compatBlock: Partial<notion.BaseBlock> = {
-    id: partialBlock.id
+  const compatBlock: any = {
+    id: partialBlock.id,
+    version: 1 // Add version field
+  }
+
+  // Only add space_id if it exists
+  const spaceId = extractSpaceIdFromBlock(partialBlock)
+  if (spaceId) {
+    compatBlock.space_id = spaceId
   }
 
   if (children && children.length) {
@@ -36,13 +43,24 @@ export function convertBlock({
   compatBlock.type = block.type
   compatBlock.created_time = convertTime(block.created_time)
   compatBlock.last_edited_time = convertTime(block.last_edited_time)
+  compatBlock.version = 14 // Match V3 version format
+
   if (block.created_by) {
     compatBlock.created_by_table = `notion_${block.created_by.object}`
     compatBlock.created_by_id = block.created_by.id
   }
   compatBlock.last_edited_by_table = block.last_edited_by?.object
-  compatBlock.last_edited_by_id = block.last_edited_by?.id
+    ? `notion_${block.last_edited_by.object}`
+    : 'notion_user'
+  compatBlock.last_edited_by_id =
+    block.last_edited_by?.id || block.created_by?.id
   compatBlock.alive = block.archived !== true
+
+  // Add permissions
+  compatBlock.permissions = createPermissions(block)
+
+  // Add CRDT data for compatibility
+  compatBlock.crdt_format_version = 1
 
   if (parentMap) {
     const parentId = parentMap[block.id]
@@ -75,7 +93,7 @@ export function convertBlock({
 
   const blockDetails: any = block[block.type as keyof types.Block]
   if (blockDetails) {
-    if (blockDetails.rich_text) {
+    if (blockDetails.rich_text && Array.isArray(blockDetails.rich_text)) {
       compatBlock.properties.title = convertRichText(blockDetails.rich_text)
     }
 
@@ -193,7 +211,7 @@ export function convertBlock({
         compatBlock.properties.link = [[block.bookmark.url]]
       }
 
-      if (block.bookmark.caption) {
+      if (block.bookmark.caption && Array.isArray(block.bookmark.caption)) {
         compatBlock.properties.description = convertRichText(
           block.bookmark.caption
         )
@@ -221,14 +239,17 @@ export function convertBlock({
 
     case 'child_page':
       compatBlock.type = 'page'
+      // Add default format fields that are in V3 but missing in V1
+      compatBlock.format.page_full_width = true
 
       if (pageMap) {
         const page = pageMap[block.id] as types.Page
         if (page) {
           if (page.properties.title) {
-            compatBlock.properties.title = convertRichText(
-              (page.properties.title as any).rich_text
-            )
+            const titleRichText = (page.properties.title as any).rich_text
+            if (titleRichText && Array.isArray(titleRichText)) {
+              compatBlock.properties.title = convertRichText(titleRichText)
+            }
           }
 
           if (page.cover) {
@@ -344,7 +365,9 @@ export function convertBlock({
 
     case 'table_row':
       compatBlock.properties = {
-        ...block.table_row?.cells?.map((cell) => convertRichText(cell))
+        ...block.table_row?.cells?.map((cell) =>
+          cell && Array.isArray(cell) ? convertRichText(cell) : []
+        )
       }
       break
 
@@ -466,7 +489,7 @@ export function convertBlock({
           [(block.image as any).file?.url || (block.image as any).external?.url]
         ]
 
-        if (block.image.caption) {
+        if (block.image.caption && Array.isArray(block.image.caption)) {
           compatBlock.properties.caption = block.image.caption.map((caption) =>
             convertRichText([caption])
           )
@@ -488,4 +511,29 @@ export function convertBlock({
   }
 
   return compatBlock as notion.Block
+}
+
+function extractSpaceIdFromBlock(block: types.PartialBlock): string | null {
+  // Try to extract space_id from parent or other sources
+  if ((block as any).parent?.workspace) {
+    return 'workspace' // Default workspace ID for official API
+  }
+  return null // Return null instead of undefined
+}
+
+function createPermissions(block: types.Block): any[] {
+  // Create basic permissions structure
+  return [
+    {
+      id: block.created_by?.id || 'default',
+      role: {
+        read_content: true,
+        insert_content: true,
+        update_content: true
+      },
+      type: 'user_permission',
+      table: 'block',
+      user_id: block.created_by?.id || 'default'
+    }
+  ]
 }
