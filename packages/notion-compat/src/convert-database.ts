@@ -147,18 +147,19 @@ export function convertDataSourceQueryToQueryResult(
   queryResponse: types.DataSourceQuery,
   _viewId: string
 ): notion.CollectionQueryResult {
-  const blockIds = queryResponse.results
+  // Use the order from query results as the API should return sorted results
+  const orderedBlockIds = queryResponse.results
     .filter((result) => result.object === 'page')
     .map((result) => result.id)
 
   const queryResult: notion.CollectionQueryResult = {
     type: 'gallery',
-    total: blockIds.length,
-    blockIds,
+    total: orderedBlockIds.length,
+    blockIds: orderedBlockIds,
     aggregationResults: [],
     collection_group_results: {
       type: 'results',
-      blockIds,
+      blockIds: orderedBlockIds,
       hasMore: queryResponse.has_more || false
     }
   }

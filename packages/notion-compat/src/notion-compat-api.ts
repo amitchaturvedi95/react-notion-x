@@ -229,9 +229,15 @@ export class NotionCompatAPI {
             })
             dataSourceMap[dataSourceId] = dataSource
 
-            // Query data source for pages
+            // Query data source for pages with sorting to match V3 order
             const queryResponse = await this.client.dataSources.query({
-              data_source_id: dataSourceId
+              data_source_id: dataSourceId,
+              sorts: [
+                {
+                  timestamp: 'last_edited_time',
+                  direction: 'descending'
+                }
+              ]
             })
             dataSourceQueryMap[dataSourceId] = queryResponse
 
