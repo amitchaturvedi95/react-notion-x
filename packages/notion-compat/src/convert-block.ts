@@ -224,7 +224,9 @@ export function convertBlock({
       break
 
     case 'column':
-      // no-op
+      if (block.column?.width_ratio) {
+        compatBlock.format.column_ratio = block.column.width_ratio
+      }
       break
 
     case 'bookmark':
