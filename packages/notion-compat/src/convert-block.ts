@@ -169,6 +169,23 @@ export function convertBlock({
     case 'to_do':
       if (block.to_do?.checked) {
         compatBlock.properties.checked = [['Yes']]
+
+        // Add strikethrough to rich text when todo is checked
+        if (block.to_do?.rich_text && Array.isArray(block.to_do.rich_text)) {
+          const modifiedRichText = block.to_do.rich_text.map((item) => {
+            if (item.annotations) {
+              return {
+                ...item,
+                annotations: {
+                  ...item.annotations,
+                  strikethrough: true
+                }
+              }
+            }
+            return item
+          })
+          compatBlock.properties.title = convertRichText(modifiedRichText)
+        }
       }
       break
 
